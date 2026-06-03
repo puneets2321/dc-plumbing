@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DC Drains & Plumbing | Los Angeles Plumber | 24/7 Emergency Service</title>
+<meta name="description" content="DC Drains & Plumbing — Los Angeles's most trusted plumber. 48+ years experience, 4.9★ rating, 24/7 emergency service. Call (657) 298-5046 for a free estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #112240;
+    --blue: #1a4a8a;
+    --accent: #e8a020;
+    --accent-light: #f5b93e;
+    --white: #f8f5ef;
+    --gray: #8a9ab5;
+    --light-bg: #f0ece3;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    padding: 1.2rem 5%;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(10,22,40,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(232,160,32,0.2);
+    transition: all 0.3s;
+  }
+  .nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 2.2rem; list-style: none; }
+  .nav-links a {
+    color: var(--gray); font-size: 0.9rem; font-weight: 500;
+    text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    background: var(--accent); color: var(--navy);
+    padding: 0.6rem 1.4rem; border-radius: 4px;
+    font-weight: 600; font-size: 0.85rem; text-decoration: none;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 24px; height: 2px; background: var(--white); transition: all 0.3s; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    padding: 8rem 5% 4rem;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 70% 60% at 70% 50%, rgba(26,74,138,0.35) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 10% 80%, rgba(232,160,32,0.12) 0%, transparent 60%),
+      var(--navy);
+  }
+  .hero-pipe-decor {
+    position: absolute; right: 0; top: 0; height: 100%;
+    width: 50%;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'%3E%3Crect x='60' y='0' width='16' height='600' fill='%231a4a8a' opacity='0.4'/%3E%3Crect x='58' y='180' width='20' height='60' rx='4' fill='%231a4a8a' opacity='0.6'/%3E%3Crect x='76' y='210' width='80' height='16' fill='%231a4a8a' opacity='0.4'/%3E%3Crect x='140' y='208' width='20' height='20' rx='3' fill='%23e8a020' opacity='0.5'/%3E%3Crect x='160' y='80' width='16' height='400' fill='%231a4a8a' opacity='0.25'/%3E%3Crect x='240' y='0' width='12' height='600' fill='%231a4a8a' opacity='0.2'/%3E%3Ccircle cx='68' cy='100' r='22' fill='none' stroke='%23e8a020' stroke-width='3' opacity='0.4'/%3E%3Ccircle cx='68' cy='100' r='10' fill='%23e8a020' opacity='0.3'/%3E%3Ccircle cx='168' cy='460' r='18' fill='none' stroke='%231a4a8a' stroke-width='3' opacity='0.5'/%3E%3C/svg%3E") no-repeat center/cover;
+    opacity: 0.6;
+  }
+  .hero-content { position: relative; z-index: 2; max-width: 680px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(232,160,32,0.15);
+    border: 1px solid rgba(232,160,32,0.4);
+    padding: 0.4rem 1rem; border-radius: 100px;
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--accent);
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-badge .dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.7s 0.1s ease both;
+  }
+  .hero h1 .line2 { color: var(--accent); display: block; }
+  .hero p {
+    font-size: 1.15rem; line-height: 1.7;
+    color: rgba(248,245,239,0.75); max-width: 500px;
+    margin-bottom: 2.5rem;
+    animation: fadeUp 0.7s 0.2s ease both;
+  }
+  .hero-actions {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    animation: fadeUp 0.7s 0.3s ease both;
+  }
+  .btn-primary {
+    background: var(--accent); color: var(--navy);
+    padding: 0.95rem 2.2rem; border-radius: 5px;
+    font-weight: 700; font-size: 1rem; text-decoration: none;
+    letter-spacing: 0.03em; transition: all 0.2s;
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(232,160,32,0.35); }
+  .btn-secondary {
+    border: 1.5px solid rgba(248,245,239,0.3); color: var(--white);
+    padding: 0.95rem 2.2rem; border-radius: 5px;
+    font-weight: 500; font-size: 1rem; text-decoration: none;
+    letter-spacing: 0.03em; transition: all 0.2s;
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .btn-secondary:hover { border-color: var(--white); background: rgba(255,255,255,0.06); }
+  .hero-stats {
+    display: flex; gap: 2.5rem; margin-top: 4rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(248,245,239,0.1);
+    animation: fadeUp 0.7s 0.4s ease both;
+  }
+  .stat-val {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem; color: var(--accent); line-height: 1;
+  }
+  .stat-label { font-size: 0.8rem; color: var(--gray); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 0.3rem; }
+
+  @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+
+  /* ── EMERGENCY BANNER ── */
+  .emergency-banner {
+    background: linear-gradient(135deg, #b71c1c, #c62828);
+    padding: 1.4rem 5%;
+    display: flex; align-items: center; justify-content: center; gap: 1.5rem;
+    flex-wrap: wrap; text-align: center;
+  }
+  .emergency-banner .pulse-icon {
+    width: 14px; height: 14px; background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.6);
+    animation: ripple 1.5s infinite;
+  }
+  @keyframes ripple {
+    0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.6); }
+    70% { box-shadow: 0 0 0 14px rgba(255,255,255,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+  }
+  .emergency-banner p { font-weight: 600; font-size: 1rem; letter-spacing: 0.02em; }
+  .emergency-banner a { color: #fff; font-weight: 800; font-size: 1.15rem; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5); }
+
+  /* ── SECTION BASE ── */
+  section { padding: 6rem 5%; }
+  .section-tag {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent);
+    margin-bottom: 0.7rem;
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  .section-tag::before { content:''; display:block; width:28px; height:2px; background:var(--accent); }
+  h2.section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1; letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+  }
+  .section-sub { color: var(--gray); font-size: 1.05rem; line-height: 1.7; max-width: 520px; }
+
+  /* ── SERVICES ── */
+  .services { background: var(--navy-mid); }
+  .services-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5px;
+    background: rgba(248,245,239,0.07);
+    border: 1.5px solid rgba(248,245,239,0.07);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .service-card {
+    background: var(--navy-mid);
+    padding: 2.2rem;
+    transition: background 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 3px; background: var(--accent);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .service-card:hover { background: rgba(26,74,138,0.25); }
+  .service-card:hover::after { transform: scaleX(1); }
+  .service-icon {
+    width: 52px; height: 52px;
+    background: rgba(232,160,32,0.12);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+  }
+  .service-card h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.6rem; }
+  .service-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.65; }
+
+  /* ── WHY US ── */
+  .why-us { background: var(--navy); }
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .why-visual {
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .why-circle-big {
+    width: 340px; height: 340px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue) 0%, var(--navy-mid) 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    border: 2px solid rgba(232,160,32,0.25);
+    box-shadow: 0 0 80px rgba(26,74,138,0.4);
+    text-align: center; padding: 2rem;
+  }
+  .why-circle-big .big-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5.5rem; line-height: 1;
+    color: var(--accent);
+  }
+  .why-circle-big .big-label { font-size: 0.9rem; color: var(--gray); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 0.3rem; }
+  .why-circle-small {
+    position: absolute;
+    background: var(--accent); color: var(--navy);
+    border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-weight: 700; text-align: center;
+  }
+  .why-circle-small.s1 { width: 120px; height: 120px; top: -10px; right: 0px; font-size: 0.8rem; padding: 1rem; }
+  .why-circle-small.s2 { width: 100px; height: 100px; bottom: 10px; left: 10px; font-size: 0.75rem; padding: 0.8rem; }
+  .why-circle-small .num { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; line-height: 1; }
+  .why-points { display: flex; flex-direction: column; gap: 1.8rem; margin-top: 2.5rem; }
+  .why-point { display: flex; gap: 1.2rem; align-items: flex-start; }
+  .why-point-icon {
+    width: 44px; height: 44px; min-width: 44px;
+    background: rgba(232,160,32,0.1);
+    border: 1.5px solid rgba(232,160,32,0.3);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+  }
+  .why-point-text h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
+  .why-point-text p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
+
+  /* ── REVIEWS ── */
+  .reviews { background: var(--light-bg); color: var(--navy); }
+  .reviews .section-tag { color: #c07010; }
+  .reviews .section-tag::before { background: #c07010; }
+  .reviews h2.section-title { color: var(--navy); }
+  .reviews .section-sub { color: #556; }
+  .reviews-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 2rem; margin-bottom: 3.5rem; }
+  .rating-badge-big {
+    display: flex; align-items: center; gap: 1rem;
+    background: var(--navy); color: var(--white);
+    padding: 1rem 1.8rem; border-radius: 10px;
+  }
+  .rating-num { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--accent); line-height: 1; }
+  .stars { color: var(--accent); font-size: 1.2rem; letter-spacing: 2px; }
+  .rating-count { font-size: 0.85rem; color: var(--gray); margin-top: 0.2rem; }
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px,1fr)); gap: 1.5rem; }
+  .review-card {
+    background: #fff; border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .review-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,0.12); }
+  .review-stars { color: #f5a623; font-size: 1rem; letter-spacing: 2px; margin-bottom: 0.9rem; }
+  .review-text { font-size: 0.95rem; color: #334; line-height: 1.7; margin-bottom: 1.2rem; font-style: italic; }
+  .review-author { display: flex; align-items: center; gap: 0.8rem; }
+  .review-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--blue); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .review-name { font-weight: 600; font-size: 0.9rem; color: var(--navy); }
+  .review-date { font-size: 0.78rem; color: #889; }
+
+  /* ── PROCESS ── */
+  .process { background: var(--navy-mid); }
+  .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 0; margin-top: 3.5rem; position: relative; }
+  .process-steps::before {
+    content: '';
+    position: absolute; top: 38px; left: 12%; right: 12%; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.4;
+  }
+  .process-step { text-align: center; padding: 0 1.5rem; }
+  .step-num-wrap {
+    width: 76px; height: 76px; margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    background: var(--navy);
+    border: 2px solid rgba(232,160,32,0.4);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .step-num-wrap::before {
+    content: '';
+    position: absolute; inset: -6px;
+    border-radius: 50%;
+    border: 1px dashed rgba(232,160,32,0.2);
+  }
+  .step-num { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--accent); }
+  .process-step h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .process-step p { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
+
+  /* ── SERVICE AREAS ── */
+  .areas { background: var(--navy); }
+  .areas-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.5rem; }
+  .area-tag {
+    background: rgba(26,74,138,0.3);
+    border: 1px solid rgba(26,74,138,0.5);
+    padding: 0.5rem 1.1rem;
+    border-radius: 100px;
+    font-size: 0.85rem; color: rgba(248,245,239,0.75);
+    transition: all 0.2s;
+  }
+  .area-tag:hover { background: rgba(232,160,32,0.15); border-color: rgba(232,160,32,0.4); color: var(--accent); }
+
+  /* ── CONTACT ── */
+  .contact { background: var(--navy-mid); }
+  .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+  .contact-item {
+    display: flex; gap: 1.1rem; align-items: flex-start;
+    padding: 1.4rem;
+    background: rgba(10,22,40,0.5);
+    border: 1px solid rgba(248,245,239,0.07);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+  }
+  .contact-item:hover { border-color: rgba(232,160,32,0.3); }
+  .contact-item-icon {
+    width: 46px; height: 46px; min-width: 46px;
+    background: rgba(232,160,32,0.1);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+  }
+  .contact-item-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); font-weight: 600; margin-bottom: 0.3rem; }
+  .contact-item-val { font-size: 1rem; font-weight: 500; }
+  .contact-item-val a { color: var(--white); text-decoration: none; }
+  .contact-item-val a:hover { color: var(--accent); }
+  .contact-form { background: rgba(10,22,40,0.6); border: 1px solid rgba(248,245,239,0.08); border-radius: 14px; padding: 2.5rem; }
+  .contact-form h3 { font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 1.8rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-group { margin-bottom: 1.2rem; }
+  .form-group label { display: block; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--gray); margin-bottom: 0.5rem; }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    background: rgba(248,245,239,0.05);
+    border: 1.5px solid rgba(248,245,239,0.12);
+    color: var(--white);
+    padding: 0.85rem 1rem;
+    border-radius: 7px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    -webkit-appearance: none;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--accent);
+    background: rgba(232,160,32,0.05);
+  }
+  .form-group select option { background: var(--navy-mid); }
+  .form-group textarea { resize: vertical; min-height: 120px; }
+  .form-submit {
+    width: 100%;
+    background: var(--accent); color: var(--navy);
+    border: none; cursor: pointer;
+    padding: 1rem; border-radius: 7px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem; font-weight: 700; letter-spacing: 0.04em;
+    transition: all 0.2s;
+  }
+  .form-submit:hover { background: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(232,160,32,0.3); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #060f1e;
+    padding: 4rem 5% 2rem;
+    border-top: 1px solid rgba(248,245,239,0.06);
+  }
+  .footer-top { display: flex; justify-content: space-between; gap: 3rem; flex-wrap: wrap; margin-bottom: 3rem; }
+  .footer-brand { max-width: 300px; }
+  .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.06em; margin-bottom: 0.8rem; }
+  .footer-logo span { color: var(--accent); }
+  .footer-brand p { font-size: 0.9rem; color: var(--gray); line-height: 1.7; }
+  .footer-col h4 { font-weight: 700; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-col ul a { color: var(--gray); font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
+  .footer-col ul a:hover { color: var(--white); }
+  .footer-bottom { border-top: 1px solid rgba(248,245,239,0.06); padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .footer-bottom p { font-size: 0.82rem; color: var(--gray); }
+  .footer-license { font-size: 0.78rem; color: #556; }
+  .lic-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(232,160,32,0.1); border: 1px solid rgba(232,160,32,0.25); padding: 0.25rem 0.7rem; border-radius: 4px; color: var(--accent); font-size: 0.78rem; font-weight: 600; }
+
+  /* ── FLOATING CALL ── */
+  .floating-call {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 200;
+    display: flex; align-items: center; gap: 0.7rem;
+    background: #b71c1c;
+    color: #fff;
+    padding: 0.9rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700; font-size: 0.95rem;
+    text-decoration: none;
+    box-shadow: 0 6px 30px rgba(183,28,28,0.5);
+    transition: all 0.2s;
+    animation: floatIn 0.8s 1s both;
+  }
+  .floating-call:hover { transform: scale(1.04); box-shadow: 0 10px 40px rgba(183,28,28,0.6); }
+  .floating-call .phone-icon { font-size: 1.1rem; animation: shake 2.5s 2s infinite; }
+  @keyframes shake {
+    0%,90%,100%{transform:rotate(0)} 92%{transform:rotate(-15deg)} 96%{transform:rotate(15deg)}
+  }
+  @keyframes floatIn { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .why-grid, .contact-wrap { grid-template-columns: 1fr; }
+    .why-visual { display: none; }
+    .process-steps::before { display: none; }
+  }
+  @media (max-width: 680px) {
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .hero-stats { gap: 1.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-top { flex-direction: column; }
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.65s ease, transform 0.65s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">DC <span>Drains</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:6572985046" class="nav-cta">📞 (657) 298-5046</a>
+  <div class="hamburger" onclick="this.classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pipe-decor"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Open 24 Hours · Free Estimates
+    </div>
+    <h1>Los Angeles<span class="line2">Plumbing Pros.</span></h1>
+    <p>DC Drains & Plumbing has served Los Angeles for over 48 years. Trusted by thousands, rated 4.9 stars, and ready 24/7 for any emergency — big or small.</p>
+    <div class="hero-actions">
+      <a href="tel:6572985046" class="btn-primary">📞 Call Now — Free Estimate</a>
+      <a href="#services" class="btn-secondary">View Services →</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-val">48+</div>
+        <div class="stat-label">Years in Business</div>
+      </div>
+      <div>
+        <div class="stat-val">4.9★</div>
+        <div class="stat-label">Google Rating</div>
+      </div>
+      <div>
+        <div class="stat-val">359+</div>
+        <div class="stat-label">Five-Star Reviews</div>
+      </div>
+      <div>
+        <div class="stat-val">24/7</div>
+        <div class="stat-label">Emergency Service</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY BANNER -->
+<div class="emergency-banner">
+  <div class="pulse-icon"></div>
+  <p>🚨 Plumbing Emergency? We respond fast — day or night.</p>
+  <a href="tel:6572985046">(657) 298-5046</a>
+  <p>— Available 24 hours, 7 days a week</p>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-header reveal">
+    <div>
+      <div class="section-tag">What We Do</div>
+      <h2 class="section-title">Complete Plumbing<br>Solutions</h2>
+    </div>
+    <p class="section-sub">From a dripping faucet to a full re-pipe — DC Drains handles it all with speed, expertise, and guaranteed workmanship.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-icon">🚨</div>
+      <h3>24/7 Emergency Services</h3>
+      <p>Burst pipes, severe leaks, or sewage backups — our emergency team is dispatched fast, any hour of the day or night.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🚿</div>
+      <h3>Drain Cleaning & Clearing</h3>
+      <p>Slow or fully blocked drains professionally cleared using hydro-jetting, snaking, and camera inspection technology.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔧</div>
+      <h3>Leak Detection & Repair</h3>
+      <p>Advanced leak detection methods to pinpoint problems behind walls and under slabs — fixed right the first time.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🌡️</div>
+      <h3>Water Heater Services</h3>
+      <p>Installation, repair, and replacement for traditional tank and tankless water heaters. Fast turnaround guaranteed.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏠</div>
+      <h3>Sewer Line Services</h3>
+      <p>Full sewer line inspections, hydro-jetting, spot repairs, and complete replacements using trenchless technology.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">💧</div>
+      <h3>Faucet & Fixture Repair</h3>
+      <p>Leaky faucets, running toilets, and malfunctioning fixtures repaired or replaced quickly and affordably.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏗️</div>
+      <h3>Re-Piping Services</h3>
+      <p>Full or partial home re-piping in copper or PEX, with minimal disruption to your home and long-term warranties.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔩</div>
+      <h3>Gas Line Services</h3>
+      <p>Certified gas line installation, repair, and leak detection to keep your home and family safe.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏢</div>
+      <h3>Commercial Plumbing</h3>
+      <p>Serving restaurants, offices, and multi-unit buildings with professional commercial-grade plumbing solutions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us" id="why">
+  <div class="why-grid">
+    <div class="why-visual reveal">
+      <div class="why-circle-big">
+        <div class="big-num">48+</div>
+        <div class="big-label">Years Serving<br>Los Angeles</div>
+      </div>
+      <div class="why-circle-small s1">
+        <div class="num">4.9</div>
+        <div>★ Stars</div>
+      </div>
+      <div class="why-circle-small s2">
+        <div class="num">24/7</div>
+        <div>Always On</div>
+      </div>
+    </div>
+    <div>
+      <div class="section-tag reveal">Why Choose Us</div>
+      <h2 class="section-title reveal">LA's Most Trusted<br>Plumbing Team</h2>
+      <div class="why-points">
+        <div class="why-point reveal">
+          <div class="why-point-icon">🏅</div>
+          <div class="why-point-text">
+            <h4>48+ Years of Local Expertise</h4>
+            <p>Nearly five decades of hands-on experience with every type of plumbing system in Los Angeles homes and businesses.</p>
+          </div>
+        </div>
+        <div class="why-point reveal">
+          <div class="why-point-icon">⚡</div>
+          <div class="why-point-text">
+            <h4>Fast Response, Every Time</h4>
+            <p>We don't leave you waiting. Our dispatchers prioritize emergency calls and get a licensed plumber to you ASAP.</p>
+          </div>
+        </div>
+        <div class="why-point reveal">
+          <div class="why-point-icon">💰</div>
+          <div class="why-point-text">
+            <h4>Free Estimates & Transparent Pricing</h4>
+            <p>No surprise bills. You'll know the cost before any work begins — and our pricing is consistently fair and competitive.</p>
+          </div>
+        </div>
+        <div class="why-point reveal">
+          <div class="why-point-icon">✅</div>
+          <div class="why-point-text">
+            <h4>Licensed, Insured & Guaranteed</h4>
+            <p>All work performed by licensed, background-checked plumbers. Every job backed by our workmanship guarantee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div style="text-align:center; max-width: 600px; margin: 0 auto;" class="reveal">
+    <div class="section-tag" style="justify-content:center">How It Works</div>
+    <h2 class="section-title">Simple As 1, 2, 3</h2>
+    <p class="section-sub" style="margin: 0 auto;">Getting your plumbing fixed by DC Drains is fast and hassle-free.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <div class="step-num-wrap"><div class="step-num">01</div></div>
+      <h3>Call or Book Online</h3>
+      <p>Reach us 24/7 by phone or submit a request online. We'll respond within minutes.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num-wrap"><div class="step-num">02</div></div>
+      <h3>Free Assessment</h3>
+      <p>A licensed plumber arrives, diagnoses the issue, and provides a clear, upfront estimate — no cost to you.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num-wrap"><div class="step-num">03</div></div>
+      <h3>Problem Solved</h3>
+      <p>We get to work and fix the problem efficiently, cleanly, and right the first time.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num-wrap"><div class="step-num">04</div></div>
+      <h3>Guaranteed Results</h3>
+      <p>Your satisfaction is backed by our written workmanship guarantee. Job done, worry gone.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="reviews-header reveal">
+    <div>
+      <div class="section-tag">Customer Reviews</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub">Hundreds of five-star reviews from real Los Angeles homeowners and businesses.</p>
+    </div>
+    <div class="rating-badge-big">
+      <div class="rating-num">4.9</div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="rating-count">359+ Google Reviews</div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"DC Drains came out within an hour of my call at 11pm for a burst pipe emergency. Incredibly professional, fixed it fast, and the price was totally fair. These guys are the real deal."</p>
+      <div class="review-author">
+        <div class="review-avatar">MR</div>
+        <div>
+          <div class="review-name">Maria R.</div>
+          <div class="review-date">Los Angeles, CA</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I've used DC Drains twice now — once for a water heater replacement and once for a clogged sewer line. Both times: fast, clean, and professional. Won't use anyone else."</p>
+      <div class="review-author">
+        <div class="review-avatar">TK</div>
+        <div>
+          <div class="review-name">Tom K.</div>
+          <div class="review-date">Burbank, CA</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Called at 7am on a Sunday with a flooded bathroom. They answered immediately, showed up by 8:30, and had everything sorted by noon. Absolute lifesavers."</p>
+      <div class="review-author">
+        <div class="review-avatar">JS</div>
+        <div>
+          <div class="review-name">Jessica S.</div>
+          <div class="review-date">Glendale, CA</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Very honest company. They came to give an estimate and told me I actually didn't need as much work as I feared. That kind of honesty is rare and I appreciate it enormously."</p>
+      <div class="review-author">
+        <div class="review-avatar">DL</div>
+        <div>
+          <div class="review-name">David L.</div>
+          <div class="review-date">Pasadena, CA</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Best plumber in LA, hands down. Cleared a drain that two other companies couldn't fix. Showed up on time, explained everything clearly, left the place spotless."</p>
+      <div class="review-author">
+        <div class="review-avatar">AL</div>
+        <div>
+          <div class="review-name">Amanda L.</div>
+          <div class="review-date">West Hollywood, CA</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Used them for a full re-pipe on my 1960s home. The crew was respectful, worked efficiently over 2 days, and the job came in right at the estimate. Zero surprises."</p>
+      <div class="review-author">
+        <div class="review-avatar">RG</div>
+        <div>
+          <div class="review-name">Robert G.</div>
+          <div class="review-date">Studio City, CA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="areas">
+  <div class="reveal">
+    <div class="section-tag">Where We Serve</div>
+    <h2 class="section-title">Serving All of Greater Los Angeles</h2>
+    <p class="section-sub">DC Drains & Plumbing covers the entire LA metro area including:</p>
+  </div>
+  <div class="areas-grid reveal">
+    <span class="area-tag">Los Angeles</span>
+    <span class="area-tag">Burbank</span>
+    <span class="area-tag">Glendale</span>
+    <span class="area-tag">Pasadena</span>
+    <span class="area-tag">Studio City</span>
+    <span class="area-tag">West Hollywood</span>
+    <span class="area-tag">Hollywood</span>
+    <span class="area-tag">Sherman Oaks</span>
+    <span class="area-tag">Van Nuys</span>
+    <span class="area-tag">Encino</span>
+    <span class="area-tag">Woodland Hills</span>
+    <span class="area-tag">Torrance</span>
+    <span class="area-tag">Long Beach</span>
+    <span class="area-tag">Inglewood</span>
+    <span class="area-tag">Culver City</span>
+    <span class="area-tag">Santa Monica</span>
+    <span class="area-tag">El Monte</span>
+    <span class="area-tag">Alhambra</span>
+    <span class="area-tag">Montebello</span>
+    <span class="area-tag">Compton</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-wrap">
+    <div>
+      <div class="section-tag reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Ready to Fix Your<br>Plumbing?</h2>
+      <p class="section-sub reveal">Call us for a free estimate or fill out the form and we'll get back to you promptly.</p>
+      <div class="contact-info">
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-val"><a href="tel:6572985046">(657) 298-5046</a></div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">🕐</div>
+          <div>
+            <div class="contact-item-label">Hours</div>
+            <div class="contact-item-val">Open 24 Hours · 7 Days a Week</div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Service Area</div>
+            <div class="contact-item-val">Greater Los Angeles, CA</div>
+          </div>
+        </div>
+        <div class="contact-item reveal">
+          <div class="contact-item-icon">💬</div>
+          <div>
+            <div class="contact-item-label">Response Time</div>
+            <div class="contact-item-val">Emergency calls answered in minutes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <h3>Request a Free Estimate</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Smith">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="(xxx) xxx-xxxx">
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@email.com">
+      </div>
+      <div class="form-group">
+        <label>Service Needed</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>24/7 Emergency Service</option>
+          <option>Drain Cleaning</option>
+          <option>Leak Detection & Repair</option>
+          <option>Water Heater Service</option>
+          <option>Sewer Line Service</option>
+          <option>Re-Piping</option>
+          <option>Gas Line Service</option>
+          <option>Commercial Plumbing</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Describe the Issue</label>
+        <textarea placeholder="Tell us about your plumbing problem..."></textarea>
+      </div>
+      <button class="form-submit" onclick="handleSubmit(this)">Request Free Estimate →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">DC <span>Drains</span> & Plumbing</div>
+      <p>Serving Los Angeles with honest, expert plumbing for over 48 years. Licensed, insured, and available 24/7.</p>
+      <br>
+      <span class="lic-badge">✓ Licensed & Insured</span>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Emergency Plumbing</a></li>
+        <li><a href="#services">Drain Cleaning</a></li>
+        <li><a href="#services">Water Heaters</a></li>
+        <li><a href="#services">Sewer Lines</a></li>
+        <li><a href="#services">Re-Piping</a></li>
+        <li><a href="#services">Gas Lines</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#why">About Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#areas">Service Areas</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:6572985046">(657) 298-5046</a></li>
+        <li><a href="#contact">Free Estimate</a></li>
+        <li><a href="#contact">24/7 Emergency Line</a></li>
+        <li><a>Los Angeles, CA</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 DC Drains & Plumbing. All rights reserved.</p>
+    <p class="footer-license">4.9 ★ · 359+ Reviews · Serving LA for 48+ Years</p>
+  </div>
+</footer>
+
+<!-- FLOATING CALL BUTTON -->
+<a href="tel:6572985046" class="floating-call">
+  <span class="phone-icon">📞</span>
+  Emergency? Call Now
+</a>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        e.target.style.transitionDelay = (i * 0.05) + 's';
+        e.target.classList.add('visible');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => obs.observe(el));
+
+  // Nav scroll
+  window.addEventListener('scroll', () => {
+    document.querySelector('nav').style.padding =
+      window.scrollY > 60 ? '0.8rem 5%' : '1.2rem 5%';
+  });
+
+  // Form submit
+  function handleSubmit(btn) {
+    btn.textContent = '✓ Request Sent! We\'ll call you shortly.';
+    btn.style.background = '#2e7d32';
+    btn.style.color = '#fff';
+    btn.disabled = true;
+  }
+</script>
+</body>
+</html>
